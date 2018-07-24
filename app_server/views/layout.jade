@@ -6,7 +6,25 @@ html
     link(rel='stylesheet', href='/bootstrap/css/amelia.bootstrap.css')
     link(rel='stylesheet', href='/stylesheet/style.css')
   body
-    block content
-    
+    .navbar.navbar-default.navbar-fixed-top
+      .container
+        .navbar-header
+          a.navbar-brand(href='/') Main
+          button.navbar-toggle(type='button', data-toggle='collapse', data-target='#navbar-main')
+            span.icon-bar
+            span.icon-bar
+            span.icon-bar
+        #navbar-main.navbar-collapse.collapse
+          ul.nav.bavbar-navbar
+            li 
+              a(href="/about/") About  
+            
+    .container
+      block content
+      
+      footer
+        .row
+          .col-xs-12
+            snall &copy, Con Cac
     script(scr='/javascrips/jquery-3.3.1.min.js')
     script(scr='/bootstrap/js/bootstrap.min.js')
